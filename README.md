@@ -12,9 +12,9 @@
 
 ##### List of cryptos (stateful): Make an API call and then render the info from the API to display the results
 
-#### 5 functional components
+#### 5 stateless components
 
-### Top 5 current crypto will be displayed on the page
+#### Top 5 current crypto will be displayed on the page with the current price
 
 ### API
-www.google.com/orangechair/resaurants/
+#### https://www.worldcoinindex.com/apiservice
