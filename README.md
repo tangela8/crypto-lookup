@@ -12,6 +12,8 @@
 
 ##### List of cryptos (stateful): Make an API call and then render the info from the API to display the results
 
+![wireframe](https://github.com/tangela8/crypto-lookup/blob/master/wireframe.png)
+
 #### 5 stateless components
 
 #### Top 5 current crypto will be displayed on the page with the current price
