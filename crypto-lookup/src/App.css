@@ -8,3 +8,19 @@
   background-color: blue;
   color: #fff;
 }
+
+div#crypto {
+  background-color: blue;
+  width: 70%;
+  margin: 0 auto 4px auto;
+  padding: 1em;
+  box-shadow: 1px 1px 0 lightgrey;
+}
+
+span.left {
+  font-weight: bold;
+}
+
+span.right {
+  float:right;
+}

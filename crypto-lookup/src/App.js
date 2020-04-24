@@ -2,16 +2,9 @@ import React, { Component } from 'react';
 import './App.css';
 import axios from 'axios';
 import './App.css';
-//have to start with a constructor using state to put the cryptos in an array
 
-function Title() {
-  return (
-    <div className="Title">
-      
-    </div>
-  )
-}
 class App extends Component {
+  //have to start with a constructor using state to put the cryptos in an array
   constructor(props) {
     super(props);
 
@@ -24,8 +17,8 @@ class App extends Component {
   componentDidMount() {
 
       axios.get('https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,IOT&tsyms=USD')
-      .then(res => {
-        const cryptos = res.data;
+      .then(results => {
+        const cryptos = results.data;
         this.setState({cryptos: cryptos});
       })
   }
@@ -39,14 +32,16 @@ class App extends Component {
       return (
         
         <div className="App">
-
-        <h1>Welcome to Crypto Lookup</h1>
+        <div id="header">
+        <h1>Crypto Lookup</h1>
+        </div>
 
         {Object.keys(this.state.cryptos).map((key) => (
-          <div id="crypto-container">
+          <div id="crypto">
             <span className="left">{key}</span>
             <span className="right">{this.state.cryptos[key].USD}</span>
           </div>
+          
         ))}
       </div>
     
