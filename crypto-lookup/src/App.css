@@ -1,6 +1,5 @@
 
-  
-.App {
+div#header {
   box-sizing: border-box;
   width: 100%;
   display: flex;
@@ -9,6 +8,15 @@
   margin-bottom: 2em;
   background-color: blue;
   color: #fff;
+}
+
+div#searchbar {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  width: 100%;
+  margin: 10px;
+  font-size: 18px;
 }
 
 div#crypto {

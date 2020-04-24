@@ -32,21 +32,28 @@ class App extends Component {
       return (
         
         <div className="App">
-        <div id="header">
-        <h1>Crypto Lookup</h1>
-        <input name="text" type="text" />
-        <button>Lookup</button>
-        </div>
-
-        {Object.keys(this.state.cryptos).map((key) => (
-          <div id="crypto">
-            <span className="left">{key}</span>
-            <span className="right">{this.state.cryptos[key].USD}</span>
-            <span className="middle">{this.state.cryptos[key].EUR}</span>
+          <div id="header">
+            <h1>Crypto Lookup</h1>
           </div>
-          
-        ))}
-      </div>
+
+          <div id="searchbar">
+            <input name="text" type="text" />
+            <button>Lookup</button>
+          </div>
+
+          <div id="button">
+            
+          </div>
+
+          {Object.keys(this.state.cryptos).map((key) => (
+            <div id="crypto">
+              <span className="left">{key}</span>
+              <span className="right">{this.state.cryptos[key].USD}</span>
+              <span className="middle">{this.state.cryptos[key].EUR}</span>
+            </div>
+            
+          ))}
+        </div>
     
       );
 
