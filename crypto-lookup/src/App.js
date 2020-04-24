@@ -32,13 +32,7 @@ class App extends Component {
 //use ul to creat a list and map out the items
       return (
           <div className="App">
-              <ul>
-                  {cryptos.map(item => (
-                      <li key={cryptos.id}>
-                          Name: {cryptos.name} 
-                      </li>
-                  ))}
-              </ul>
+              
           </div>
       );
 
