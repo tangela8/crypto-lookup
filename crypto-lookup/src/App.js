@@ -1,20 +1,26 @@
 import React, { Component } from 'react';
 import './App.css';
 import axios from 'axios';
-//have to start with a constructor using state to put the items in an array
+import './App.css';
+//have to start with a constructor using state to put the cryptos in an array
+
+function Title() {
+  return (
+    <div className="Title">
+      
+    </div>
+  )
+}
 class App extends Component {
-
   constructor(props) {
+    super(props);
 
-      super(props);
-
-      this.state = {
-          cryptos: []
+    this.state = {
+      cryptos: []
       }
-
   }
 
-  //use componentdidmount method to fetch the data from the API
+  //use componentdidmount method and axios to fetch the data from the API
   componentDidMount() {
 
       axios.get('https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,IOT&tsyms=USD')
@@ -29,9 +35,13 @@ class App extends Component {
 
       const { cryptos } = this.state;
 
-//use ul to creat a list and map out the items
+//list and map out the cryptos
       return (
+        
         <div className="App">
+
+        <h1>Welcome to Crypto Lookup</h1>
+
         {Object.keys(this.state.cryptos).map((key) => (
           <div id="crypto-container">
             <span className="left">{key}</span>
