@@ -16,7 +16,7 @@ class App extends Component {
   //use componentdidmount method and axios to fetch the data from the API
   componentDidMount() {
 
-      axios.get('https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,IOT&tsyms=USD')
+      axios.get("https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,LTC,BCH,XRP&tsyms=USD,EUR")
       .then(results => {
         const cryptos = results.data;
         this.setState({cryptos: cryptos});
@@ -40,6 +40,7 @@ class App extends Component {
           <div id="crypto">
             <span className="left">{key}</span>
             <span className="right">{this.state.cryptos[key].USD}</span>
+            <span className="middle">{this.state.cryptos[key].EUR}</span>
           </div>
           
         ))}
