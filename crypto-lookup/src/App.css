@@ -1,22 +1,20 @@
-
 div#header {
   box-sizing: border-box;
   width: 100%;
   display: flex;
   justify-content: center;
   padding: 1em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   background-color: blue;
   color: #fff;
 }
 
 div#searchbar {
   text-align: center;
-  width: 80%;
   margin: 0 auto;
   width: 100%;
-  margin: 10px;
-  font-size: 18px;
+  margin: 20px;
+
 }
 
 div#crypto {
