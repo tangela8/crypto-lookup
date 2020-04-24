@@ -31,9 +31,15 @@ class App extends Component {
 
 //use ul to creat a list and map out the items
       return (
-          <div className="App">
-              
+        <div className="App">
+        {Object.keys(this.state.cryptos).map((key) => (
+          <div id="crypto-container">
+            <span className="left">{key}</span>
+            <span className="right">{this.state.cryptos[key].USD}</span>
           </div>
+        ))}
+      </div>
+    
       );
 
   }
