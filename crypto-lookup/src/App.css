@@ -1,3 +1,5 @@
+
+  
 .App {
   box-sizing: border-box;
   width: 100%;
@@ -23,4 +25,8 @@ span.left {
 
 span.right {
   float:right;
+}
+
+span.middle {
+  float:center;
 }

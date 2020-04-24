@@ -34,6 +34,8 @@ class App extends Component {
         <div className="App">
         <div id="header">
         <h1>Crypto Lookup</h1>
+        <input name="text" type="text" />
+        <button>Lookup</button>
         </div>
 
         {Object.keys(this.state.cryptos).map((key) => (
