@@ -1,3 +1,8 @@
+.App {
+  background-image:url("https://steemitimages.com/DQmQJk98ZQ9EvtpAJKgUcvTaS6PzAQewb3DzTpb299toBDa/167577302.jpg");
+  background-position: cover;
+}
+
 div#header {
   box-sizing: border-box;
   width: 100%;
