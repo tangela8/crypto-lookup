@@ -10,7 +10,6 @@ div#header {
 }
 
 div#header2 {
-  
   display: flex;
   justify-content: center;
   color:black;
@@ -18,7 +17,6 @@ div#header2 {
 
 div#searchbar {
   text-align: center;
-  margin: 0 auto;
   width: 100%;
   margin: 20px;
 
@@ -29,7 +27,7 @@ div#crypto {
   width: 70%;
   margin: 0 auto 4px auto;
   padding: 1em;
-  box-shadow: 1px 1px 0 lightgrey;
+  border-radius: 20px;
 }
 
 span.left {
@@ -41,5 +39,5 @@ span.right {
 }
 
 span.middle {
-  justify-content: center;
+  width:200px;
 }
