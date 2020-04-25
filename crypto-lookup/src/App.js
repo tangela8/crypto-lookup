@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import axios from 'axios';
-import './App.css';
 
 class App extends Component {
   //have to start with a constructor using state to put the cryptos in an array
@@ -28,7 +27,7 @@ class App extends Component {
 
       const { cryptos } = this.state;
 
-//list and map out the cryptos
+//list and map out the cryptos and prices
       return (
         
         <div className="App">
@@ -38,11 +37,11 @@ class App extends Component {
 
           <div id="searchbar">
             <input name="text" type="text" />
-            <button>Lookup</button>
+            <button>search</button>
           </div>
 
-          <div id="button">
-            
+          <div id="header2">
+            <h3>Today's Top 5!</h3>
           </div>
 
           {Object.keys(this.state.cryptos).map((key) => (

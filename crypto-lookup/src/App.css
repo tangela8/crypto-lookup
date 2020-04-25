@@ -9,6 +9,13 @@ div#header {
   color: #fff;
 }
 
+div#header2 {
+  
+  display: flex;
+  justify-content: center;
+  color:black;
+}
+
 div#searchbar {
   text-align: center;
   margin: 0 auto;
@@ -18,7 +25,7 @@ div#searchbar {
 }
 
 div#crypto {
-  background-color: blue;
+  background-color: pink;
   width: 70%;
   margin: 0 auto 4px auto;
   padding: 1em;
@@ -34,5 +41,5 @@ span.right {
 }
 
 span.middle {
-  float:center;
+  justify-content: center;
 }
